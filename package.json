@@ -1,0 +1,35 @@
+{
+  "name": "agenttrace",
+  "version": "1.0.0",
+  "description": "Developer-first AI Agent Execution Trace Linter, Runaway Loop & Cost Budget Guardrail Simulator with Embedded Bento Grid Studio",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "agenttrace": "bin/agenttrace.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test dist/tests/*.test.js",
+    "studio": "npm run build && node dist/cli.js studio"
+  },
+  "keywords": [
+    "ai-agents",
+    "mcp",
+    "observability",
+    "trace-linter",
+    "llm-cost",
+    "guardrails",
+    "typescript",
+    "devtools"
+  ],
+  "author": "Jatin Sharma <raghavjatin245@gmail.com> (https://jatinsh.netlify.app/)",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.2"
+  }
+}
